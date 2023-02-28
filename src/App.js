@@ -73,15 +73,7 @@ function App() {
 
     let inpArr;
 
-    if (inputData.includes(",")) {
-      inpArr = inputData.split(",");
-    } else if (inputData.includes(" ")) {
-      inpArr = inputData.split(" ");
-    } else {
-      message.error("Pass space at the end if searching for single Port...");
-      setIsSearching(false);
-      return;
-    }
+    inpArr = inputData.split(",");
 
     let tempTableData = [];
 
